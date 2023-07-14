@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&family=Montserrat:wght@300&family=Nunito+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* colores principales de la pagina: #3ad6ff ; #ff3392 ; #3d393b; #ffff */
+
+.barranav {
+  background-color: #3d393b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 5px 10%;
+}
+
+.barranav .logo {
+  cursor: pointer;
+}
+
+.barranav .logo img {
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.barranav .logo img:hover {
+  transform: scale(1.2);
+}
+
+.barranav .nav-links {
+  list-style: none;
+}
+
+.barranav .nav-links li {
+  display: inline-block;
+  padding: 0 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.barranav .nav-links li::hover {
+  transform: scale(1.1);
+}
+
+.barranav .nav-links a {
+  font-size: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.barranav .nav-links li a::hover {
+  color: #ff3392;
+}
+
+.barranav .btn button {
+  font-weight: 700;
+  color: #ffffff;
+  padding: 15px 25px;
+  background-color: #ff3392;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.barranav .btn button:hover {
+  transform: scale(1.1);
+}
+
+.hero {
+  position: relative;
+  background-image: url(Imagenes/bannerzapatillas.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: start;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.container-banner {
+  max-width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#verproducto {
+  display: inline-block;
+  background-color: #ff3392;
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 20px 30px;
+}
+
+.linkproductos {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.linkproductos:hover {
+  color: aqua;
+}
+
+.boton {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #3d393b;
+  background-color: #ff3392;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+main h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 1rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 20px;
+  color: white;
+  background-color: #ff3392;
+}
+
+.grid-index {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.zapa1,
+.zapa2,
+.zapa3 {
+  border: #3d393b solid 5px;
+  margin: 5px;
+}
+
+footer {
+  background-color: #ff3392;
+  text-align: center;
+  padding: 20px;
+}
+
+.bannermujeres,
+.bannerhombres,
+.banner-destacados {
+  height: 200px;
+  width: 100%;
+}
+
+/* Destacados */
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ff3392;
+  border: black solid 2px;
+  padding: 20px;
+}
+
+.grid-tienda1,
+.grid-tienda2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
+}
+
+/* Contacto styling */
+
+legend {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  border: 5px solid black;
+}
+
+.personal {
+  padding-top: 50px;
+}
+
+.contentpersonal {
+  margin-bottom: 70px;
+  margin-left: 100px;
+}
+.consulta {
+  margin-bottom: 70px;
+  margin-left: 100px;
+}
+
+input {
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.fieldsetconsulta {
+  padding-top: 50px;
+}
+
+.tu-consulta {
+  position: relative;
+  bottom: 40px;
+  padding-right: 10px;
+}
+
+.textarea {
+  background-color: whitesmoke;
+  font-size: 20px;
+  color: #ff3392;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 20px;
+  width: 400px;
+  height: 100px;
+}
+
+label {
+  color: white;
+  font-size: 24px;
+}
+
+.enviar,
+.restablecer {
+  font-size: 20px;
+  background-color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  /*  margin-bottom: 315px; */
+}
+
+.contactoimg {
+  width: 100%;
+}
+
+/* Sucursales */
+
+#sucursales-titulo {
+  background-image: url(/Imagenes/banner_ubicacion.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  font-size: 40px;
+  padding: 40px;
+}
+
+main .grid-maps .imagen-maps {
+  border: 5px solid black;
+  border-radius: 20px;
+  height: 800px;
+  width: 800px;
+}
+
+.grid-maps {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
+  align-content: space-between;
+  margin: 20px;
+}
+
+/* Sobre-Nostros */
+
+.flex-nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imagen-nosotros {
+  height: 1000px;
+  width: 800px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+.parrafo-descripcion {
+  font-size: 30px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 5px solid black;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+/* media queries */
+
+@media (max-width: 480px) {
+  .barranav .nav-links {
+    text-align: center;
+  }
+
+  .barranav .nav-links li {
+    font-size: 8px;
+  }
+
+  .grid-maps {
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+  }
+
+  main .grid-maps .imagen-maps {
+    width: 100vh;
+    height: 50vh;
+  }
+
+  .grid-tienda1,
+  .grid-tienda2 {
+    grid-template-columns: auto;
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="shortcut icon" href="Imagenes/logo2.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pagina con formulario de contacto</title>
+  </head>
+  <!-- Encabezado con logo y barra de navegacion -->
+  <header class="barranav">
+    <div class="logo">
+      <a href="./index.html">
+        <img src="./Imagenes/logo2.png" alt="logo-marca"
+      /></a>
+    </div>
+    <nav id="navegador">
+      <ul class="nav-links">
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="sucursales.html">Sucursales</a></li>
+        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+    <a href="contacto.html" class="btn"><button>Contacto</button></a>
+  </header>
+  <!--   Cuerpo con campos de contacto -->
+  <body>
+    <form action="procesar-datos.php" method="post" enctype="text/plain">
+      <div class="personal">
+        <fieldset>
+          <legend>Datos personales</legend>
+          <div class="contentpersonal">
+            <div>
+              <label for="Nombre">Nombre</label>
+              <input type="text" id="Nombre" placeholder="Ej: Cristian" />
+            </div>
+            <div>
+              <label for="Telefono">Telefono</label>
+              <input
+                type="tel"
+                required
+                id="Telefono"
+                placeholder="11-1111-1111"
+              />
+            </div>
+            <div>
+              <label for="email">E-Mail</label>
+              <input
+                type="email"
+                required
+                id="email"
+                placeholder="Cris1234@gmail.com"
+              />
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="fieldsetconsulta">
+        <fieldset>
+          <legend>Consulta de producto</legend>
+          <div class="consulta">
+            <label class="tu-consulta" for="tu-consulta"
+              >Mandanos tu consulta</label
+            >
+            <textarea
+              class="textarea"
+              id="tu-consulta"
+              placeholder="Maximo 300 caracteres"
+            ></textarea>
+          </div>
+        </fieldset>
+      </div>
+
+      <div>
+        <input class="enviar" type="submit" />
+        <input class="restablecer" type="reset" />
+      </div>
+    </form>
+    <img class="contactoimg" src="./Imagenes/contacto.png" alt="" />
+  </body>
+  <footer>©2023 Panthersneakers.com | All rights reserved</footer>
+</html>
